@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+     margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family: 'Poppins', sans-serif;
+}
+
+body
+{
+    background-image: url(bg3.jpg);
+    background-size: cover;
+    color: #000000;;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding:30px;
+    font-size: 20px;
+    align-items: center;
+}
+button{
+    padding:10px 20px;
+    border-radius: 10px;
+    background-color: blueviolet;
+    color:white;
+    border:none;
+    outline: none;
+    margin:20px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+section{
+    text-align: center;
+    /* padding:px; */
+
+}
+
+h1{
+    font-size: 60px;
+    font-weight: 700px;
+}
+p{
+    margin:15px;
+}
+
+footer{
+    text-align: center;
+    color:black;
+    font-weight: 900;
+}
+footer h1{
+    font-size: 70px;
+    font-weight: 900px;
+    padding:40px;
+}
+
+input{
+    padding:10px;
+    border-radius: 10px;
+    background-color: transparent;
+    color:rgb(2, 2, 2);
+    border:1px solid rgb(114, 112, 112);
+    outline: none;
+}
+
+.card{
+    padding:50px;
+    margin:10px;
+    text-align: center;
+    box-shadow: 0px 5px 6px rgb(31, 31, 31);
+    max-width: 30%;
+    border-radius: 20px;
+}
+.phones{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap:20px;
+    padding:50px 10px;
+}
+.show_card{
+ 
+    display:flex;
+    background-color: rgba(0, 0, 0, 0.601);
+    height:100vh;
+    width:100vw;
+    justify-content: center;
+   
+    
+}
+.card_detail{
+    padding:40px;
+    box-shadow: 0px 0px 5px rgb(30, 30, 30);
+    background-color: black;
+    color:rgb(12, 12, 12);
+    width: 40%;
+}
+dialog{
+    position: fixed;
+    top:10%;
+    left:30%;
+    
+    background-color: rgb(242, 242, 248);
+    box-shadow: 0px 0px 7px rgb(78, 77, 77);
+    color:rgb(8, 0, 0);
+    display: flex;
+    /* flex-wrap: wrap; */
+    flex-direction: column;
+    align-items: center;
+    border:none;
+    outline: none;
+    padding:20px;
+    height:90%;
+    overflow-y: scroll;
+}
+img{
+    margin:20px;
+}
+
+#close{
+    background-color: red;
+}
+.dialog_container{
+    position: fixed;
+    top:0;
+    left:0;
+    display: none;
+    height:100vh;
+    background-color: rgba(148, 138, 148, 0.363);
+    width: 100vw;
+}
+.card img{
+    flex-shrink: 1;
+}
+.show_all_cards{
+    display: none;
+    flex-wrap: wrap;
+
+}
+
+@media  screen and (max-width:940px) {
+
+   
+
+    .card{
+        max-width: 90%;
+
+    }
+    .static_intro_section img{
+     max-width: 80%;
+    }
+    
+}
